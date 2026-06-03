@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>群活跃度 Dashboard</title>
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --card: #13131a;
+    --border: #1e1e2a;
+    --text: #e0e0e0;
+    --muted: #6b6b80;
+    --accent: #00d4aa;
+    --warn: #f59e0b;
+    --danger: #ef4444;
+    --purple: #8b5cf6;
+    --blue: #3b82f6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  .header {
+    padding: 24px 32px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .header h1 { font-size: 22px; font-weight: 700; }
+  .header .badge { 
+    font-size: 12px; color: var(--muted); 
+    background: var(--card); padding: 4px 12px; border-radius: 20px;
+  }
+  .container { max-width: 1400px; margin: 0 auto; padding: 24px 32px; }
+  
+  /* Stats cards */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .stat-card .label { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+  .stat-card .value { font-size: 32px; font-weight: 800; }
+  .stat-card .sub { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .stat-card.accent .value { color: var(--accent); }
+  .stat-card.warn .value { color: var(--warn); }
+  .stat-card.danger .value { color: var(--danger); }
+  
+  /* Bar chart */
+  .chart-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    font-size: 13px;
+  }
+  .chart-bar .bar-label { width: 70px; text-align: right; color: var(--muted); }
+  .chart-bar .bar-fill {
+    height: 20px;
+    border-radius: 4px;
+    transition: width 0.3s;
+    min-width: 2px;
+  }
+  .chart-bar .bar-count { width: 40px; color: var(--muted); font-size: 12px; }
+  
+  /* Table */
+  .table-wrap {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+  }
+  .tab {
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--muted);
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .search-box {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 14px;
+    color: var(--text);
+    font-size: 14px;
+    width: 240px;
+    outline: none;
+  }
+  .search-box:focus { border-color: var(--accent); }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  thead th {
+    text-align: left;
+    padding: 10px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  thead th:hover { color: var(--text); }
+  thead th.sorted { color: var(--accent); }
+  thead th .arrow { margin-left: 4px; font-size: 10px; }
+  
+  tbody td {
+    padding: 10px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+    white-space: nowrap;
+  }
+  tbody tr:hover { background: rgba(255,255,255,0.03); }
+  
+  .rank { color: var(--muted); font-size: 12px; width: 32px; }
+  .rank-1 { color: #f59e0b; font-weight: 700; }
+  .rank-2 { color: #94a3b8; font-weight: 700; }
+  .rank-3 { color: #92400e; font-weight: 700; }
+  
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .tag-hot { background: rgba(239, 68, 68, 0.15); color: var(--danger); }
+  .tag-active { background: rgba(0, 212, 170, 0.15); color: var(--accent); }
+  .tag-occasional { background: rgba(245, 158, 11, 0.15); color: var(--warn); }
+  .tag-low { background: rgba(107, 107, 128, 0.15); color: var(--muted); }
+  .tag-dead { background: rgba(239, 68, 68, 0.08); color: #7f1d1d; }
+  .tag-deep { background: rgba(139, 92, 246, 0.1); color: var(--purple); }
+  
+  .bar-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 100px;
+  }
+  .bar-cell .mini-bar {
+    height: 6px;
+    background: var(--accent);
+    border-radius: 3px;
+    opacity: 0.6;
+    transition: width 0.3s;
+  }
+  
+  .footer {
+    padding: 20px 32px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    margin-top: 32px;
+  }
+  
+  .group-selector {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  .group-chip {
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    color: var(--muted);
+    background: var(--card);
+    transition: all 0.2s;
+  }
+  .group-chip:hover { border-color: var(--accent); color: var(--text); }
+  .group-chip.active {
+    background: rgba(0, 212, 170, 0.1);
+    border-color: var(--accent);
+    color: var(--accent);
+    font-weight: 600;
+  }
+  
+  .refresh-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--accent);
+    background: rgba(0, 212, 170, 0.08);
+    transition: all 0.2s;
+  }
+  .refresh-btn:hover {
+    background: rgba(0, 212, 170, 0.2);
+  }
+  .refresh-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.8; }
+  }
+  
+  .toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 1000;
+    animation: slideIn 0.3s ease;
+    max-width: 400px;
+  }
+  .toast.success { background: var(--accent); color: #000; }
+  .toast.error { background: var(--danger); color: #fff; }
+  .toast.info { background: var(--blue); color: #fff; }
+  @keyframes slideIn {
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  @media (max-width: 768px) {
+    .container, .header { padding: 16px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .search-box { width: 100%; }
+    thead th, tbody td { padding: 8px 10px; font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <div>
+    <h1 id="groupTitle">🚀 群活跃度</h1>
+    <span class="badge" id="updateTime">加载中...</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <button class="refresh-btn" id="refreshBtn" onclick="runAnalysis()">
+      <span id="refreshIcon">🔄</span> <span id="refreshText">刷新分析</span>
+    </button>
+    <span class="badge" id="groupCount"></span>
+  </div>
+</div>
+
+<div class="container">
+  <!-- 群选择器 -->
+  <div class="group-selector" id="groupSelector"></div>
+
+  <!-- 统计卡片 -->
+  <div class="stats-grid" id="statsGrid"></div>
+
+  <!-- 活跃度分布 -->
+  <div class="table-wrap" style="margin-bottom: 32px;" id="distChart">
+    <div style="padding: 16px; font-size: 14px; font-weight: 600; color: var(--muted);">📊 活跃度分布</div>
+    <div style="padding: 0 16px 16px;" id="distributionBars"></div>
+  </div>
+
+  <!-- 成员排行 -->
+  <div class="table-wrap">
+    <div class="tabs">
+      <div class="tab active" data-tab="all">全部成员</div>
+      <div class="tab" data-tab="active">🟢 活跃</div>
+      <div class="tab" data-tab="inactive">💀 不活跃</div>
+    </div>
+    <div class="toolbar">
+      <input class="search-box" id="searchInput" placeholder="搜索成员昵称..." type="text">
+      <span style="font-size: 12px; color: var(--muted);" id="resultCount"></span>
+    </div>
+    <div style="overflow-x: auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th data-sort="name">昵称</th>
+            <th data-sort="total">总发言</th>
+            <th data-sort="last_1month">近1月</th>
+            <th data-sort="last_3month">近3月</th>
+            <th data-sort="last_6month">近6月</th>
+            <th data-sort="last_seen">最后活跃</th>
+            <th data-sort="tag">状态</th>
+          </tr>
+        </thead>
+        <tbody id="memberTable"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  wechat-stats · powered by Hermes · <span id="footerTime"></span>
+</div>
+
+<script>
+// ============================================================
+// 数据加载
+// ============================================================
+let allData = null;
+let currentGroupIdx = 0;
+let currentTab = 'all';
+let currentSort = { field: 'total', asc: false };
+let searchQuery = '';
+
+async function loadData() {
+  try {
+    const resp = await fetch('wechat-stats.json');
+    allData = await resp.json();
+    if (allData.groups && allData.groups.length > 0) {
+      renderGroupSelector();
+      selectGroup(0);
+      document.getElementById('footerTime').textContent = `数据生成: ${allData.generated_at}`;
+      document.getElementById('groupCount').textContent = `${allData.groups.length} 个群`;
+    } else {
+      document.body.innerHTML = '<div style="text-align:center;padding:100px;color:var(--muted)">📭 没有数据，请先运行 python wechat-stats.py</div>';
+    }
+  } catch (e) {
+    document.body.innerHTML = `<div style="text-align:center;padding:100px;color:var(--muted)">📭 无法加载 wechat-stats.json — ${e.message}</div>`;
+  }
+}
+
+// ============================================================
+// 群选择器
+// ============================================================
+function renderGroupSelector() {
+  const el = document.getElementById('groupSelector');
+  el.innerHTML = allData.groups.map((g, i) => 
+    `<div class="group-chip" data-idx="${i}" onclick="selectGroup(${i})">${g.name} <span style="font-size:11px;opacity:0.6">(${g.total_members}人)</span></div>`
+  ).join('');
+}
+
+function selectGroup(idx) {
+  currentGroupIdx = idx;
+  document.querySelectorAll('.group-chip').forEach((c, i) => c.classList.toggle('active', i === idx));
+  document.getElementById('updateTime').textContent = `更新于 ${allData.groups[idx].analyzed_at}`;
+  document.getElementById('groupTitle').textContent = `🚀 ${allData.groups[idx].name} · 群活跃度`;
+  document.title = `${allData.groups[idx].name} · 群活跃度 Dashboard`;
+  renderStats();
+  renderDistribution();
+  renderTable();
+}
+
+// ============================================================
+// 统计卡片
+// ============================================================
+function renderStats() {
+  const g = allData.groups[currentGroupIdx];
+  const participation = ((g.total_members - g.never_spoken) / g.total_members * 100).toFixed(1);
+  document.getElementById('statsGrid').innerHTML = `
+    <div class="stat-card">
+      <div class="label">👥 总成员</div>
+      <div class="value">${g.total_members}</div>
+    </div>
+    <div class="stat-card accent">
+      <div class="label">💬 总消息</div>
+      <div class="value">${g.total_messages.toLocaleString()}</div>
+      <div class="sub">人均 ${(g.total_messages / g.total_members).toFixed(1)} 条</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">📢 参与率</div>
+      <div class="value">${participation}%</div>
+      <div class="sub">${g.total_members - g.never_spoken} 人发过言</div>
+    </div>
+    <div class="stat-card warn">
+      <div class="label">🔥 近1月活跃</div>
+      <div class="value">${g.active_1month}</div>
+      <div class="sub">${(g.active_1month / g.total_members * 100).toFixed(1)}%</div>
+    </div>
+    <div class="stat-card danger">
+      <div class="label">💀 从未发言</div>
+      <div class="value">${g.never_spoken}</div>
+      <div class="sub">${(g.never_spoken / g.total_members * 100).toFixed(1)}% 可清理</div>
+    </div>
+  `;
+}
+
+// ============================================================
+// 活跃度分布
+// ============================================================
+function renderDistribution() {
+  const g = allData.groups[currentGroupIdx];
+  const tags = { '🔥超活跃': 0, '🟢活跃': 0, '🟡偶尔': 0, '🟠低频': 0, '🔴沉水': 0, '💀死号': 0 };
+  g.all_members.forEach(m => { if (tags[m.tag] !== undefined) tags[m.tag]++; });
+  
+  const colors = {
+    '🔥超活跃': 'var(--danger)',
+    '🟢活跃': 'var(--accent)',
+    '🟡偶尔': 'var(--warn)',
+    '🟠低频': '#6366f1',
+    '🔴沉水': 'var(--purple)',
+    '💀死号': '#374151',
+  };
+  
+  const maxCount = Math.max(...Object.values(tags), 1);
+  
+  document.getElementById('distributionBars').innerHTML = Object.entries(tags).map(([tag, count]) => {
+    const pct = (count / g.total_members * 100).toFixed(1);
+    const barPct = (count / maxCount * 100);
+    return `<div class="chart-bar">
+      <span class="bar-label">${tag}</span>
+      <div class="bar-fill" style="width:${barPct}%;background:${colors[tag]}"></div>
+      <span class="bar-count">${count}人 (${pct}%)</span>
+    </div>`;
+  }).join('');
+}
+
+// ============================================================
+// 表格渲染
+// ============================================================
+function getFilteredMembers() {
+  const g = allData.groups[currentGroupIdx];
+  let members = [...g.all_members];
+  
+  // Tab filter
+  if (currentTab === 'active') {
+    members = members.filter(m => ['🔥超活跃', '🟢活跃', '🟡偶尔'].includes(m.tag));
+  } else if (currentTab === 'inactive') {
+    members = members.filter(m => ['🟠低频', '🔴沉水', '💀死号'].includes(m.tag));
+  }
+  
+  // Search filter
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    members = members.filter(m => m.name.toLowerCase().includes(q));
+  }
+  
+  // Sort
+  const field = currentSort.field;
+  members.sort((a, b) => {
+    let va = a[field], vb = b[field];
+    if (typeof va === 'string') va = va || '';
+    if (typeof vb === 'string') vb = vb || '';
+    if (va < vb) return currentSort.asc ? 1 : -1;
+    if (va > vb) return currentSort.asc ? -1 : 1;
+    return 0;
+  });
+  
+  return members;
+}
+
+function renderTable() {
+  const members = getFilteredMembers();
+  const maxTotal = Math.max(...members.map(m => m.total), 1);
+  
+  document.getElementById('memberTable').innerHTML = members.map((m, i) => {
+    let rankClass = '';
+    if (i === 0) rankClass = 'rank-1';
+    else if (i === 1) rankClass = 'rank-2';
+    else if (i === 2) rankClass = 'rank-3';
+    
+    let tagClass = 'tag-dead';
+    if (m.tag === '🔥超活跃') tagClass = 'tag-hot';
+    else if (m.tag === '🟢活跃') tagClass = 'tag-active';
+    else if (m.tag === '🟡偶尔') tagClass = 'tag-occasional';
+    else if (m.tag === '🟠低频') tagClass = 'tag-low';
+    else if (m.tag === '🔴沉水') tagClass = 'tag-deep';
+    
+    const barWidth = (m.total / maxTotal * 100).toFixed(0);
+    
+    return `<tr>
+      <td class="rank ${rankClass}">${currentSort.field === 'total' && !currentSort.asc ? i + 1 : ''}</td>
+      <td><strong>${escHtml(m.name)}</strong></td>
+      <td>
+        <div class="bar-cell">
+          <span>${m.total}</span>
+          <div class="mini-bar" style="width:${barWidth}px"></div>
+        </div>
+      </td>
+      <td>${m.last_1month || '-'}</td>
+      <td>${m.last_3month || '-'}</td>
+      <td>${m.last_6month || '-'}</td>
+      <td style="color:var(--muted);font-size:12px">${m.last_seen || '-'}</td>
+      <td><span class="tag ${tagClass}">${m.tag}</span></td>
+    </tr>`;
+  }).join('');
+  
+  document.getElementById('resultCount').textContent = `共 ${members.length} 人`;
+}
+
+function escHtml(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+// ============================================================
+// 交互
+// ============================================================
+document.addEventListener('click', (e) => {
+  // Tab 切换
+  if (e.target.classList.contains('tab')) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    e.target.classList.add('active');
+    currentTab = e.target.dataset.tab;
+    renderTable();
+  }
+  
+  // 表头排序
+  if (e.target.dataset.sort) {
+    const field = e.target.dataset.sort;
+    if (currentSort.field === field) {
+      currentSort.asc = !currentSort.asc;
+    } else {
+      currentSort.field = field;
+      currentSort.asc = false;
+    }
+    document.querySelectorAll('thead th').forEach(th => {
+      th.classList.remove('sorted');
+      th.querySelector('.arrow')?.remove();
+    });
+    e.target.classList.add('sorted');
+    const arrow = currentSort.asc ? ' ▴' : ' ▾';
+    e.target.innerHTML += `<span class="arrow">${arrow}</span>`;
+    renderTable();
+  }
+});
+
+// 搜索
+document.getElementById('searchInput').addEventListener('input', (e) => {
+  searchQuery = e.target.value;
+  renderTable();
+});
+
+// ============================================================
+// 一键刷新分析
+// ============================================================
+async function runAnalysis() {
+  const btn = document.getElementById('refreshBtn');
+  const icon = document.getElementById('refreshIcon');
+  const text = document.getElementById('refreshText');
+  
+  btn.disabled = true;
+  icon.textContent = '⏳';
+  text.textContent = '分析中...';
+  showToast('正在分析微信数据库...', 'info');
+  
+  try {
+    const g = allData.groups[currentGroupIdx];
+    const resp = await fetch('/api/run?group=' + encodeURIComponent(g.username));
+    const result = await resp.json();
+    
+    if (result.ok) {
+      showToast('✅ 分析完成！正在刷新...', 'success');
+      await loadData();
+      setTimeout(() => {
+        selectGroup(currentGroupIdx);
+      }, 200);
+    } else {
+      showToast('❌ 分析失败: ' + (result.error || '未知错误'), 'error');
+    }
+  } catch (e) {
+    showToast('❌ 请求失败: ' + e.message, 'error');
+  } finally {
+    btn.disabled = false;
+    icon.textContent = '🔄';
+    text.textContent = '刷新分析';
+  }
+}
+
+function showToast(msg, type) {
+  const existing = document.querySelector('.toast');
+  if (existing) existing.remove();
+  
+  const toast = document.createElement('div');
+  toast.className = `toast ${type}`;
+  toast.textContent = msg;
+  document.body.appendChild(toast);
+  
+  setTimeout(() => toast.remove(), 4000);
+}
+
+// ============================================================
+// 启动
+// ============================================================
+loadData();
+</script>
+</body>
+</html>

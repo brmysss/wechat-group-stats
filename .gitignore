@@ -1,0 +1,15 @@
+# 隐私数据
+wechat-stats.json
+group-names.json
+*.db
+decrypted/
+all_keys.json
+config.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
