@@ -64,7 +64,9 @@ def run_decrypt(wechat_dir):
         return False
     
     print("[*] 解密数据库...")
-    result = subprocess.run(["python3", str(decrypt_script)], cwd=wd, capture_output=True, text=True)
+    venv_python = wd / ".venv" / "bin" / "python3"
+    python = str(venv_python) if venv_python.exists() else "python3"
+    result = subprocess.run([python, str(decrypt_script)], cwd=wd, capture_output=True, text=True)
     if result.returncode != 0:
         print(f"[!] 解密失败:\n{result.stderr}")
         return False
@@ -410,6 +412,172 @@ def analyze_group(contact_db_path, message_dbs, group_username, room_id, contact
 
 
 # ============================================================
+# 推送消息到云端 API（--push 模式）
+# ============================================================
+SYNC_STATE_FILE = BASE_DIR / ".sync-state.json"
+
+def load_sync_state():
+    """加载上次同步时间"""
+    if SYNC_STATE_FILE.exists():
+        try:
+            return json.loads(SYNC_STATE_FILE.read_text())
+        except:
+            pass
+    return {}
+
+def save_sync_state(state):
+    SYNC_STATE_FILE.write_text(json.dumps(state, indent=2))
+
+def extract_messages_for_push(contact_db_path, message_dbs, group_username, since_ts=0):
+    """提取消息全文用于推送，跳过 WCDB 压缩行"""
+    md5 = hashlib.md5(group_username.encode()).hexdigest()
+    table_name = f"Msg_{md5}"
+    messages = []
+
+    for msg_db_path in message_dbs:
+        conn = sqlite3.connect(str(msg_db_path))
+        exists = conn.execute(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name=?", (table_name,)
+        ).fetchone()
+        if not exists:
+            conn.close()
+            continue
+
+        # 只取明文消息 + 时间戳过滤
+        rows = conn.execute(
+            f"""SELECT real_sender_id, message_content, create_time
+                FROM [{table_name}]
+                WHERE message_content IS NOT NULL
+                  AND message_content != ''
+                  AND (WCDB_CT_message_content IS NULL OR WCDB_CT_message_content = 0)
+                  AND create_time > ?
+                ORDER BY create_time ASC""",
+            (since_ts,)
+        ).fetchall()
+
+        for sender_id, content_raw, create_time in rows:
+            content = content_raw if isinstance(content_raw, str) else content_raw.decode('utf-8', errors='replace')
+            messages.append({
+                "sender_id": sender_id,
+                "content": content[:2000],  # 截断过长消息
+                "sent_at": create_time,
+            })
+
+        conn.close()
+
+    return messages
+
+def resolve_sender_wxid(contact_db_path, message_dbs, group_username, sender_ids):
+    """把 sender_id 转成 wxid"""
+    md5 = hashlib.md5(group_username.encode()).hexdigest()
+    table_name = f"Msg_{md5}"
+    result = {}
+
+    for msg_db_path in message_dbs:
+        conn = sqlite3.connect(str(msg_db_path))
+        exists = conn.execute(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name=?", (table_name,)
+        ).fetchone()
+        if not exists:
+            conn.close()
+            continue
+
+        for sid in sender_ids:
+            if sid in result:
+                continue
+            row = conn.execute(
+                f"""SELECT message_content FROM [{table_name}]
+                    WHERE real_sender_id=? AND message_content IS NOT NULL AND message_content != ''
+                    AND (WCDB_CT_message_content IS NULL OR WCDB_CT_message_content = 0)
+                    LIMIT 1""",
+                (sid,)
+            ).fetchone()
+            if row and row[0]:
+                text = row[0] if isinstance(row[0], str) else row[0].decode('utf-8', errors='replace')
+                m = re.match(r'(wxid_[a-zA-Z0-9]+):\n', text)
+                if m:
+                    result[sid] = m.group(1)
+        conn.close()
+
+    return result
+
+def push_to_api(api_url, api_key, group_wxid, messages):
+    """POST 消息到 API"""
+    import urllib.request as ur
+
+    payload = json.dumps({
+        "groupWxId": group_wxid,
+        "messages": messages
+    }).encode("utf-8")
+
+    req = ur.Request(
+        f"{api_url}/api/messages/sync",
+        data=payload,
+        headers={
+            "Content-Type": "application/json",
+            "x-api-key": api_key,
+        },
+        method="POST",
+    )
+
+    try:
+        with ur.urlopen(req, timeout=30) as resp:
+            return json.loads(resp.read())
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
+
+def run_push(group_username, api_url, api_key, message_dbs, contact_db_path):
+    """执行推送：提取 → 转 wxid → 分批 POST"""
+    state = load_sync_state()
+    since_ts = state.get(group_username, 0)
+
+    print(f"[*] 提取新消息（since {datetime.fromtimestamp(since_ts).isoformat() if since_ts else 'beginning'}）...")
+
+    raw_messages = extract_messages_for_push(contact_db_path, message_dbs, group_username, since_ts)
+
+    if not raw_messages:
+        print("[*] 没有新消息")
+        return
+
+    # 解析 wxid
+    sender_ids = set(m["sender_id"] for m in raw_messages)
+    wxid_map = resolve_sender_wxid(contact_db_path, message_dbs, group_username, sender_ids)
+
+    # 组装
+    formatted = []
+    max_ts = since_ts
+    for m in raw_messages:
+        wxid = wxid_map.get(m["sender_id"], f"unknown_{m['sender_id']}")
+        formatted.append({
+            "sender_wxid": wxid,
+            "content": m["content"],
+            "sent_at": m["sent_at"],
+        })
+        if m["sent_at"] > max_ts:
+            max_ts = m["sent_at"]
+
+    # 分批 POST（每批 200 条）
+    batch_size = 200
+    total_inserted = 0
+    total_skipped = 0
+
+    for i in range(0, len(formatted), batch_size):
+        batch = formatted[i:i + batch_size]
+        result = push_to_api(api_url, api_key, group_username, batch)
+        if result.get("ok"):
+            total_inserted += result.get("inserted", 0)
+            total_skipped += result.get("skipped", 0)
+            print(f"  [{i//batch_size + 1}] +{result.get('inserted', 0)} inserted, {result.get('skipped', 0)} skipped")
+        else:
+            print(f"  [{i//batch_size + 1}] 失败: {result.get('error', 'unknown')}")
+            return
+
+    # 更新同步时间
+    state[group_username] = max_ts
+    save_sync_state(state)
+    print(f"[+] 推送完成: {total_inserted} 新增, {total_skipped} 跳过, 同步到 {datetime.fromtimestamp(max_ts).isoformat()}")
+
+# ============================================================
 # 主流程
 # ============================================================
 def main():
@@ -417,6 +585,9 @@ def main():
     parser.add_argument("--group", type=str, help="群名/群ID筛选（模糊匹配）")
     parser.add_argument("--set-name", nargs=2, metavar=("USERNAME", "NAME"), help="给群设置自定义显示名")
     parser.add_argument("--decrypt", action="store_true", help="先解密数据库（需 wechat-decrypt 已安装）")
+    parser.add_argument("--push", action="store_true", help="推送消息到云端 API（需设置 SYNC_API_URL + SYNC_API_KEY）")
+    parser.add_argument("--sync-api-url", type=str, help="推送目标 API 地址（默认读环境变量 SYNC_API_URL）")
+    parser.add_argument("--sync-api-key", type=str, help="推送 API Key（默认读环境变量 SYNC_API_KEY）")
     parser.add_argument("--wechat-decrypt-dir", type=str, help=f"wechat-decrypt 安装目录（默认 {WECHAT_DECRYPT_DIR}）")
     parser.add_argument("--decrypted-dir", type=str, help="解密数据库目录（默认 {WECHAT_DECRYPT_DIR}/decrypted）")
     parser.add_argument("--output", type=str, default=str(DEFAULT_OUTPUT), help=f"输出JSON文件（默认 {DEFAULT_OUTPUT}）")
@@ -457,6 +628,48 @@ def main():
     if not message_dbs:
         print(f"[!] 找不到消息数据库")
         sys.exit(1)
+
+    # ─── Push 模式：推送消息到云端 API ───
+    if args.push:
+        if not args.group:
+            print("[!] --push 需要指定 --group")
+            sys.exit(1)
+
+        api_url = args.sync_api_url or os.environ.get("SYNC_API_URL", "")
+        api_key = args.sync_api_key or os.environ.get("SYNC_API_KEY", "")
+
+        if not api_url or not api_key:
+            print("[!] 请设置 SYNC_API_URL 和 SYNC_API_KEY 环境变量")
+            print("    或通过 --sync-api-url / --sync-api-key 参数传入")
+            sys.exit(1)
+
+        # 找到匹配的群
+        keyword = args.group.lower()
+        conn = sqlite3.connect(str(contact_db))
+        groups_list = conn.execute("SELECT id, username FROM chat_room WHERE username LIKE '%@chatroom'").fetchall()
+        matched = None
+        for room_id, username in groups_list:
+            if keyword in username.lower():
+                matched = username
+                break
+        conn.close()
+
+        if not matched:
+            # 尝试通过自定义名匹配
+            custom_names = load_group_names()
+            for room_id, username in groups_list:
+                gname = custom_names.get(username, "")
+                if keyword in gname.lower():
+                    matched = username
+                    break
+
+        if not matched:
+            print(f"[!] 找不到群: {args.group}")
+            sys.exit(1)
+
+        run_push(matched, api_url, api_key, message_dbs, str(contact_db))
+        sys.exit(0)
+    # ─── End Push ───
 
     contact_by_id, contact_by_wxid = build_contact_map(str(contact_db))
 
@@ -520,7 +733,8 @@ def main():
               open(output_path, "w"), ensure_ascii=False, indent=2)
 
     print(f"\n[+] 分析完成 → {output_path}")
-    print(f"    python3 wechat-server.py → http://localhost:8080/dashboard.html")
+    port = os.environ.get("PORT", "9090")
+    print(f"    Dashboard: http://localhost:{port}/dashboard.html")
 
 
 if __name__ == "__main__":

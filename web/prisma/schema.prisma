@@ -1,0 +1,129 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id          String   @id @default(uuid())
+  username    String   @unique
+  inviteCode  String   @unique
+  wxid        String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  scores      Score[]
+  redemptions Redemption[]
+
+  @@map("users")
+}
+
+model InviteCode {
+  id        String    @id @default(uuid())
+  code      String    @unique
+  isUsed    Boolean   @default(false)
+  usedBy    String?
+  createdBy String
+  createdAt DateTime  @default(now())
+
+  @@map("invite_codes")
+}
+
+model ApiKey {
+  id        String   @id @default(uuid())
+  key       String   @unique
+  label     String
+  createdAt DateTime @default(now())
+
+  @@map("api_keys")
+}
+
+model Group {
+  id        String   @id @default(uuid())
+  wxGroupId String   @unique
+  name      String
+
+  messages  Message[]
+  cycles    Cycle[]
+
+  @@map("groups")
+}
+
+model Message {
+  id         String   @id @default(uuid())
+  groupId    String
+  senderWxid String
+  content    String
+  sentAt     DateTime
+
+  group Group @relation(fields: [groupId], references: [id])
+
+  @@unique([groupId, senderWxid, sentAt])
+  @@map("messages")
+}
+
+model Cycle {
+  id        String   @id @default(uuid())
+  groupId   String
+  name      String
+  startDate DateTime
+  endDate   DateTime
+  status    String   @default("active")
+
+  group  Group   @relation(fields: [groupId], references: [id])
+  scores Score[]
+
+  @@map("cycles")
+}
+
+model Score {
+  id                 String @id @default(uuid())
+  userId             String
+  cycleId            String
+  activePoints       Int    @default(0)
+  sharerPoints       Int    @default(0)
+  researcherPoints   Int    @default(0)
+  collaboratorPoints Int    @default(0)
+  dragonBalls        Int    @default(0)
+
+  user  User  @relation(fields: [userId], references: [id])
+  cycle Cycle @relation(fields: [cycleId], references: [id])
+
+  @@unique([userId, cycleId])
+  @@map("scores")
+}
+
+model Reward {
+  id          String   @id @default(uuid())
+  name        String
+  type        String   // merch | physical | lottery
+  costPoints  Int
+  stock       Int      @default(0)
+  imageUrl    String?
+  description String?
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+
+  redemptions Redemption[]
+
+  @@map("rewards")
+}
+
+model Redemption {
+  id            String   @id @default(uuid())
+  userId        String
+  rewardId      String
+  pointsSpent   Int
+  status        String   @default("pending") // pending | fulfilled | cancelled
+  shippingInfo  String?  // JSON: {name, phone, address}
+  ethAddress    String?
+  createdAt     DateTime @default(now())
+
+  user   User   @relation(fields: [userId], references: [id])
+  reward Reward @relation(fields: [rewardId], references: [id])
+
+  @@map("redemptions")
+}
