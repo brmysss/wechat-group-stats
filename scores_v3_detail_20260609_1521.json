@@ -1,0 +1,391 @@
+{
+  "analyzed_at": "2026-06-09T15:21:04.785092",
+  "days": 14,
+  "daily_contributions": [
+    {
+      "date": "2026-06-02",
+      "msg_count": 20,
+      "contrib_count": 4,
+      "contributions": [
+        {
+          "time": "18:54",
+          "user": "吴火火 Zero",
+          "types": [
+            "collaborator"
+          ],
+          "value": 3,
+          "reason": "主动提供VPN推荐帮助"
+        },
+        {
+          "time": "21:29",
+          "user": "Allen Dily",
+          "types": [
+            "collaborator"
+          ],
+          "value": 5,
+          "reason": "承诺帮助解决交易所风控问题"
+        },
+        {
+          "time": "22:31",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享对美股与比特币关联的担忧"
+        },
+        {
+          "time": "22:37",
+          "user": "T",
+          "types": [
+            "sharer"
+          ],
+          "value": 3,
+          "reason": "分享个人定投计划"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-03",
+      "msg_count": 81,
+      "contrib_count": 4,
+      "contributions": [
+        {
+          "time": "11:27",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 6,
+          "reason": "分享对BG转型的独到见解"
+        },
+        {
+          "time": "15:27",
+          "user": "Allen Dily",
+          "types": [
+            "sharer",
+            "researcher"
+          ],
+          "value": 8,
+          "reason": "分享投研工作流优化，承诺教学"
+        },
+        {
+          "time": "15:32",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分析BG升级的竞品优势"
+        },
+        {
+          "time": "22:47",
+          "user": "熵域骇客🔥💎",
+          "types": [
+            "sharer",
+            "researcher"
+          ],
+          "value": 9,
+          "reason": "分享土狗情绪指标和共振分析工具"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-04",
+      "msg_count": 132,
+      "contrib_count": 7,
+      "contributions": [
+        {
+          "time": "09:38",
+          "user": "一颗石榴杨",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享月线形态类比22年，有参考价值"
+        },
+        {
+          "time": "10:06",
+          "user": "Allen Dily",
+          "types": [
+            "sharer"
+          ],
+          "value": 6,
+          "reason": "分享AI赋能社群积分机制，有创新思路"
+        },
+        {
+          "time": "10:56",
+          "user": "Allen Dily",
+          "types": [
+            "collaborator"
+          ],
+          "value": 7,
+          "reason": "宣布社群治理规则，提升活跃度"
+        },
+        {
+          "time": "10:56",
+          "user": "Allen Dily",
+          "types": [
+            "sharer",
+            "collaborator"
+          ],
+          "value": 8,
+          "reason": "提出AI检测发言质量发积分，有建设性"
+        },
+        {
+          "time": "11:36",
+          "user": "u154",
+          "types": [
+            "researcher"
+          ],
+          "value": 7,
+          "reason": "分析双币盈利率减半与RSI指标，有数据支撑"
+        },
+        {
+          "time": "15:33",
+          "user": "熵域骇客🔥💎",
+          "types": [
+            "sharer"
+          ],
+          "value": 6,
+          "reason": "分享HYPE下跌及大户清仓信息"
+        },
+        {
+          "time": "18:47",
+          "user": "u125",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享挂单策略，有操作参考"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-05",
+      "msg_count": 79,
+      "contrib_count": 13,
+      "contributions": [
+        {
+          "time": "09:38",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享SpaceX上市估值对比加密市场"
+        },
+        {
+          "time": "10:32",
+          "user": "Allen Dily",
+          "types": [
+            "sharer",
+            "researcher"
+          ],
+          "value": 8,
+          "reason": "分享GitHub博弈器项目并邀请star"
+        },
+        {
+          "time": "13:42",
+          "user": "u154",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享贝莱德ETF买入BTC数据"
+        },
+        {
+          "time": "15:03",
+          "user": "Allen Dily",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享ZEC价格暴跌信息"
+        },
+        {
+          "time": "15:09",
+          "user": "web",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享微策略历史背景信息"
+        },
+        {
+          "time": "15:11",
+          "user": "布衣",
+          "types": [
+            "researcher"
+          ],
+          "value": 6,
+          "reason": "分析加密信任与AI漏洞影响"
+        },
+        {
+          "time": "16:18",
+          "user": "u589",
+          "types": [
+            "sharer",
+            "researcher"
+          ],
+          "value": 7,
+          "reason": "分享ZEC总量未增发证据并@群主"
+        },
+        {
+          "time": "16:20",
+          "user": "吴火火 Zero",
+          "types": [
+            "researcher"
+          ],
+          "value": 5,
+          "reason": "分析ZEC抛压原因及bug修复时间"
+        },
+        {
+          "time": "17:05",
+          "user": "u154",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享矿工成本价信息"
+        },
+        {
+          "time": "18:14",
+          "user": "布衣",
+          "types": [
+            "researcher"
+          ],
+          "value": 7,
+          "reason": "原创分析code is law被AI打破"
+        },
+        {
+          "time": "21:23",
+          "user": "Allen Dily",
+          "types": [
+            "researcher"
+          ],
+          "value": 6,
+          "reason": "对比去年与今年DAT市场表现"
+        },
+        {
+          "time": "22:31",
+          "user": "u577",
+          "types": [
+            "sharer"
+          ],
+          "value": 3,
+          "reason": "分享新币锁仓问题求助"
+        },
+        {
+          "time": "22:35",
+          "user": "MULTIVERSE",
+          "types": [
+            "collaborator"
+          ],
+          "value": 5,
+          "reason": "提醒貔貅盘风险帮助新人"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-06",
+      "msg_count": 14,
+      "contrib_count": 5,
+      "contributions": [
+        {
+          "time": "00:15",
+          "user": "MULTIVERSE",
+          "types": [
+            "sharer"
+          ],
+          "value": 3,
+          "reason": "分享对BTC价格走势的观察"
+        },
+        {
+          "time": "09:36",
+          "user": "Allen Dily",
+          "types": [
+            "sharer"
+          ],
+          "value": 2,
+          "reason": "提及马斯克财技，但无深度分析"
+        },
+        {
+          "time": "13:07",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "用历史数据调侃ETH投资回报"
+        },
+        {
+          "time": "14:18",
+          "user": "Allen Dily",
+          "types": [
+            "sharer"
+          ],
+          "value": 1,
+          "reason": "无实质内容的调侃"
+        },
+        {
+          "time": "14:22",
+          "user": "余生",
+          "types": [
+            "sharer"
+          ],
+          "value": 3,
+          "reason": "提议用预测下注，有互动价值"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-07",
+      "msg_count": 6,
+      "contrib_count": 2,
+      "contributions": [
+        {
+          "time": "11:35",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享币安人生与OKB市值对比数据"
+        },
+        {
+          "time": "11:58",
+          "user": "T",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享KOL空投活动信息"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-08",
+      "msg_count": 52,
+      "contrib_count": 1,
+      "contributions": [
+        {
+          "time": "15:48",
+          "user": "Allen Dily",
+          "types": [
+            "sharer"
+          ],
+          "value": 7,
+          "reason": "分享开源插件，提升效率工具"
+        }
+      ],
+      "error": null
+    }
+  ]
+}

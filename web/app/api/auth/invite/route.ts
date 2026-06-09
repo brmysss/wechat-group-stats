@@ -31,11 +31,12 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "用户名已被占用" }, { status: 400 });
   }
 
-  // 创建用户 + 标记邀请码已用
+  // 创建用户 + 标记邀请码已用（如果有 boundWxid，自动关联）
   const user = await prisma.user.create({
     data: {
       username,
       inviteCode: code,
+      wxid: invite.boundWxid || undefined,
     },
   });
 

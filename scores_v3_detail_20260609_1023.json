@@ -1,0 +1,84 @@
+{
+  "analyzed_at": "2026-06-09T10:23:03.131515",
+  "days": 3,
+  "daily_contributions": [
+    {
+      "date": "2026-06-06",
+      "msg_count": 9,
+      "contrib_count": 1,
+      "contributions": [
+        {
+          "time": "13:07",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享ETH历史价格对比，有信息价值"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-07",
+      "msg_count": 6,
+      "contrib_count": 2,
+      "contributions": [
+        {
+          "time": "11:35",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享币安人生市值对比数据"
+        },
+        {
+          "time": "11:58",
+          "user": "T",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享KOL空投活动信息"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-08",
+      "msg_count": 52,
+      "contrib_count": 3,
+      "contributions": [
+        {
+          "time": "15:48",
+          "user": "Allen Dily",
+          "types": [
+            "sharer"
+          ],
+          "value": 7,
+          "reason": "分享开源插件，提升效率工具"
+        },
+        {
+          "time": "16:29",
+          "user": "Allen Dily",
+          "types": [
+            "collaborator"
+          ],
+          "value": 6,
+          "reason": "活跃群氛围，赠送周边激励成员"
+        },
+        {
+          "time": "21:04",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 3,
+          "reason": "分享项目方周边收集创意，价值一般"
+        }
+      ],
+      "error": null
+    }
+  ]
+}

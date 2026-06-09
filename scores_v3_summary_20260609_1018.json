@@ -1,0 +1,535 @@
+{
+  "analyzed_at": "2026-06-09T10:18:10.167624",
+  "days": 3,
+  "users": 58,
+  "dragon_ball_winners": [
+    "u81",
+    "Allen Dily",
+    "T"
+  ],
+  "dragon_ball_count": 3,
+  "scores": {
+    "web": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u130": {
+      "active": 4.8,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.8,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "静安": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "玉朋": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "莫 算法": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u138": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "殷子 💦🌿": {
+      "active": 3.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "与风说心事": {
+      "active": 3.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u140": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "再见阿郎": {
+      "active": 3.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "MULTIVERSE": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "小雨哈哈": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "自由雷神-Henry": {
+      "active": 3.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u149": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "Allen Dily": {
+      "active": 7.6,
+      "sharer": 7.0,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 14.6,
+      "contrib_count": 1,
+      "dragon_ball": true
+    },
+    "河滨": {
+      "active": 5.8,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.8,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "Miki": {
+      "active": 5.4,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.4,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u21": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u26": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u27": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u28": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "联昊通宥泽（老叶家美食）": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "S'améliorer": {
+      "active": 4.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.0,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u297": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u564": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "君尚": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u61": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "奎": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "清硕": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "龙龙": {
+      "active": 3.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "流光谢岁": {
+      "active": 5.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.6,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "T": {
+      "active": 7.5,
+      "sharer": 4.0,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 11.5,
+      "contrib_count": 1,
+      "dragon_ball": true
+    },
+    "吴火火 Zero": {
+      "active": 4.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.0,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u207": {
+      "active": 3.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u81": {
+      "active": 9.6,
+      "sharer": 10.0,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 19.6,
+      "contrib_count": 2,
+      "dragon_ball": true
+    },
+    "好久不见QAQ": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "Jambo": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "石头Ishi": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u88": {
+      "active": 3.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u93": {
+      "active": 4.8,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.8,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u351": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "余生": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u480": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "Mou": {
+      "active": 4.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.0,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u486": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "几疏": {
+      "active": 5.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.1,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "kk": {
+      "active": 5.4,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.4,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "STITCH": {
+      "active": 8.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 8.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "0xpotato": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "木木": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "哦哈哟": {
+      "active": 4.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.0,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "淇": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "君倾酒": {
+      "active": 5.4,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.4,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "心无旁骛": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "俺是老实人": {
+      "active": 4.8,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.8,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "转氨酶同志": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u124": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u253": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    }
+  }
+}

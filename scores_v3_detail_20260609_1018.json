@@ -1,0 +1,66 @@
+{
+  "analyzed_at": "2026-06-09T10:18:10.166598",
+  "days": 3,
+  "daily_contributions": [
+    {
+      "date": "2026-06-06",
+      "msg_count": 9,
+      "contrib_count": 1,
+      "contributions": [
+        {
+          "time": "13:07",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享ETH历史价格对比，有数据支撑"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-07",
+      "msg_count": 6,
+      "contrib_count": 2,
+      "contributions": [
+        {
+          "time": "11:35",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享币安人生市值对比数据"
+        },
+        {
+          "time": "11:58",
+          "user": "T",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享KOL空投活动信息"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-08",
+      "msg_count": 52,
+      "contrib_count": 1,
+      "contributions": [
+        {
+          "time": "15:48",
+          "user": "Allen Dily",
+          "types": [
+            "sharer"
+          ],
+          "value": 7,
+          "reason": "分享开源插件，提升效率，有链接"
+        }
+      ],
+      "error": null
+    }
+  ]
+}

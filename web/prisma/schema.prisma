@@ -8,12 +8,16 @@ datasource db {
 }
 
 model User {
-  id          String   @id @default(uuid())
-  username    String   @unique
-  inviteCode  String   @unique
-  wxid        String?
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id              String   @id @default(uuid())
+  username        String   @unique
+  inviteCode      String   @unique
+  wxid            String?
+  avatarUrl       String?
+  passwordHash    String?
+  shippingAddress String?
+  ethAddress      String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
 
   scores      Score[]
   redemptions Redemption[]
@@ -22,12 +26,13 @@ model User {
 }
 
 model InviteCode {
-  id        String    @id @default(uuid())
-  code      String    @unique
-  isUsed    Boolean   @default(false)
-  usedBy    String?
-  createdBy String
-  createdAt DateTime  @default(now())
+  id         String    @id @default(uuid())
+  code       String    @unique
+  isUsed     Boolean   @default(false)
+  usedBy     String?
+  boundWxid  String?   // 绑定群成员 wxid，用户注册时自动关联
+  createdBy  String
+  createdAt  DateTime  @default(now())
 
   @@map("invite_codes")
 }
@@ -46,10 +51,29 @@ model Group {
   wxGroupId String   @unique
   name      String
 
-  messages  Message[]
-  cycles    Cycle[]
+  messages   Message[]
+  cycles     Cycle[]
+  groupStats GroupStat[]
 
   @@map("groups")
+}
+
+model GroupStat {
+  id          String    @id @default(uuid())
+  groupId     String
+  senderWxid  String
+  total       Int       @default(0)
+  last_1month Int       @default(0)
+  last_3month Int       @default(0)
+  last_6month Int       @default(0)
+  lastSeen    DateTime? @map("last_seen")
+  tag         String    @default("")
+  updatedAt   DateTime  @default(now()) @map("updatedAt")
+
+  group Group @relation(fields: [groupId], references: [id])
+
+  @@unique([groupId, senderWxid])
+  @@map("group_stats")
 }
 
 model Message {
@@ -73,33 +97,32 @@ model Cycle {
   endDate   DateTime
   status    String   @default("active")
 
-  group  Group   @relation(fields: [groupId], references: [id])
-  scores Score[]
+  group Group @relation(fields: [groupId], references: [id])
 
   @@map("cycles")
 }
 
 model Score {
-  id                 String @id @default(uuid())
-  userId             String
-  cycleId            String
-  activePoints       Int    @default(0)
-  sharerPoints       Int    @default(0)
-  researcherPoints   Int    @default(0)
-  collaboratorPoints Int    @default(0)
-  dragonBalls        Int    @default(0)
+  id                 String  @id @default(uuid())
+  userId             String  @unique
+  activePoints       Int     @default(0)
+  sharerPoints       Int     @default(0)
+  researcherPoints   Int     @default(0)
+  collaboratorPoints Int     @default(0)
+  dragonBalls        Int     @default(0)
+  dragonBallReason   String?
+  totalEarned        Int     @default(0)  // 累计获得积分
+  totalSpent         Int     @default(0)  // 累计消费积分
 
-  user  User  @relation(fields: [userId], references: [id])
-  cycle Cycle @relation(fields: [cycleId], references: [id])
+  user User @relation(fields: [userId], references: [id])
 
-  @@unique([userId, cycleId])
   @@map("scores")
 }
 
 model Reward {
   id          String   @id @default(uuid())
   name        String
-  type        String   // merch | physical | lottery
+  type        String
   costPoints  Int
   stock       Int      @default(0)
   imageUrl    String?
@@ -117,8 +140,8 @@ model Redemption {
   userId        String
   rewardId      String
   pointsSpent   Int
-  status        String   @default("pending") // pending | fulfilled | cancelled
-  shippingInfo  String?  // JSON: {name, phone, address}
+  status        String   @default("pending")
+  shippingInfo  String?
   ethAddress    String?
   createdAt     DateTime @default(now())
 

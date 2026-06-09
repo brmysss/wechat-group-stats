@@ -3,7 +3,6 @@ import { prisma } from "@/lib/prisma";
 import { cookies } from "next/headers";
 
 export async function GET(request: NextRequest) {
-  // 需要登录
   const cookieStore = await cookies();
   const userId = cookieStore.get("user_id")?.value;
   if (!userId) {
@@ -14,79 +13,51 @@ export async function GET(request: NextRequest) {
   const groupId = searchParams.get("groupId");
 
   if (!groupId) {
-    // 返回所有群
     const groups = await prisma.group.findMany({
       select: { id: true, wxGroupId: true, name: true },
     });
     return NextResponse.json({ groups });
   }
 
-  // 按发送者统计
-  const messages = await prisma.message.findMany({
+  // 从 group_stats 读预聚合数据
+  const rows = await prisma.groupStat.findMany({
     where: { groupId },
-    select: { senderWxid: true, sentAt: true },
-    orderBy: { sentAt: "desc" },
+    orderBy: { total: "desc" },
   });
 
-  const now = new Date();
-  const oneMonthAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
-  const threeMonthsAgo = new Date(now.getTime() - 90 * 24 * 60 * 60 * 1000);
-  const sixMonthsAgo = new Date(now.getTime() - 180 * 24 * 60 * 60 * 1000);
+  const members = rows.map((r) => ({
+    name: r.senderWxid,
+    total: r.total,
+    last_1month: r.last_1month,
+    last_3month: r.last_3month,
+    last_6month: r.last_6month,
+    last_seen: r.lastSeen?.toISOString() || null,
+    tag: r.tag,
+  }));
 
-  // 按发送者聚合
-  const stats = new Map<string, {
-    total: number;
-    last_1month: number;
-    last_3month: number;
-    last_6month: number;
-    last_seen: Date | null;
-  }>();
+  const totalSpeakers = members.filter((m) => m.total > 0).length;
+  const neverSpoken = members.filter((m) => m.total === 0).length;
+  const totalMessages = members.reduce((s, m) => s + m.total, 0);
+  const totalMembers = members.length;
 
-  for (const m of messages) {
-    const s = stats.get(m.senderWxid) || {
-      total: 0,
-      last_1month: 0,
-      last_3month: 0,
-      last_6month: 0,
-      last_seen: null,
-    };
+  // 近1月活跃：last_1month > 0
+  const active1month = members.filter((m) => m.last_1month > 0).length;
 
-    s.total++;
-    if (m.sentAt >= oneMonthAgo) s.last_1month++;
-    if (m.sentAt >= threeMonthsAgo) s.last_3month++;
-    if (m.sentAt >= sixMonthsAgo) s.last_6month++;
-    if (!s.last_seen || m.sentAt > s.last_seen) s.last_seen = m.sentAt;
+  // 标签分布
+  const tagDistribution = members.reduce<Record<string, number>>((acc, m) => {
+    acc[m.tag] = (acc[m.tag] || 0) + 1;
+    return acc;
+  }, {});
 
-    stats.set(m.senderWxid, s);
-  }
-
-  // 算标签
-  const members = Array.from(stats.entries()).map(([wxid, s]) => {
-    let tag = "💀死号";
-    if (s.total > 0 && s.last_6month === 0) tag = "🔴沉水";
-    else if (s.last_6month > 0 && s.last_3month === 0) tag = "🟠低频";
-    else if (s.last_3month >= 5 && s.last_1month === 0) tag = "🟡偶尔";
-    else if (s.last_1month >= 5 && s.last_1month < 20) tag = "🟢活跃";
-    else if (s.last_1month >= 20) tag = "🔥超活跃";
-
-    return {
-      name: wxid,
-      ...s,
-      last_seen: s.last_seen?.toISOString() || null,
-      tag,
-    };
-  });
-
-  // 按总消息降序
-  members.sort((a, b) => b.total - a.total);
-
-  // 找当前用户是否已绑定 wxid
   const user = await prisma.user.findUnique({ where: { id: userId } });
 
   return NextResponse.json({
-    total_messages: messages.length,
-    total_speakers: members.filter((m) => m.total > 0).length,
-    never_spoken: members.filter((m) => m.total === 0).length,
+    total_messages: totalMessages,
+    total_speakers: totalSpeakers,
+    total_members: totalMembers,
+    never_spoken: neverSpoken,
+    active_1month: active1month,
+    tag_distribution: tagDistribution,
     members,
     myWxid: user?.wxid || null,
   });

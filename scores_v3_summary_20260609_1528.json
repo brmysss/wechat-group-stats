@@ -1,0 +1,1403 @@
+{
+  "analyzed_at": "2026-06-09T15:28:29.907529",
+  "days": 14,
+  "users": 140,
+  "dragon_ball_winners": [
+    "Allen Dily",
+    "u81",
+    "u154"
+  ],
+  "dragon_ball_count": 3,
+  "scores": {
+    "u2": {
+      "active": 2.8,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.8,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "轩辕": {
+      "active": 2.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "远x": {
+      "active": 3.4,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.4,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "莫 算法": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "与风说心事": {
+      "active": 3.8,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.8,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    ".": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "再见阿郎": {
+      "active": 5.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.7,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "殷子 💦🌿": {
+      "active": 6.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 6.1,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u526": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u17": {
+      "active": 4.2,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.2,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "小雨哈哈": {
+      "active": 5.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.7,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "Arronㅤ": {
+      "active": 2.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.1,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "自由雷神-Henry": {
+      "active": 3.9,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.9,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u21": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "Allen Dily": {
+      "active": 9.4,
+      "sharer": 10.0,
+      "researcher": 10.0,
+      "collaborator": 10.0,
+      "total": 39.4,
+      "contrib_count": 12,
+      "dragon_ball": true,
+      "dragon_reason": "以规则维护与投研方法分享双线贡献，彰显社群领袖风范。"
+    },
+    "L": {
+      "active": 2.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u537": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u26": {
+      "active": 5.4,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.4,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u27": {
+      "active": 4.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u28": {
+      "active": 3.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.0,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u564": {
+      "active": 4.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.7,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "张友良": {
+      "active": 2.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.1,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "LLL": {
+      "active": 3.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "卖鱼佬": {
+      "active": 2.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "μ": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "君尚": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u61": {
+      "active": 4.2,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.2,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u577": {
+      "active": 3.9,
+      "sharer": 0.8,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 4.7,
+      "contrib_count": 1,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "神鱼": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "龙龙": {
+      "active": 6.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 6.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u74": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "年年有鱼": {
+      "active": 3.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u589": {
+      "active": 2.1,
+      "sharer": 1.8,
+      "researcher": 3.0,
+      "collaborator": 0.0,
+      "total": 6.9,
+      "contrib_count": 1,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "慎初๛": {
+      "active": 2.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u81": {
+      "active": 9.5,
+      "sharer": 8.5,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 18.0,
+      "contrib_count": 7,
+      "dragon_ball": true,
+      "dragon_reason": "多维度洞察美股、BG转型与加密数据，展现深度分析力。"
+    },
+    "u83": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "Candy": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "Madge鱼": {
+      "active": 2.1,
+      "sharer": 1.0,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 3.1,
+      "contrib_count": 1,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "初白": {
+      "active": 4.4,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.4,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "Mi Manchi": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u88": {
+      "active": 5.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.1,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u89": {
+      "active": 3.3,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.3,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u602": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "明子才": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "铜锣湾便民修理 彭": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u93": {
+      "active": 6.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 6.0,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "zxz": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u95": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "童木": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u608": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "彬": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "红云": {
+      "active": 2.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u104": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "微光": {
+      "active": 4.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.7,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "几疏": {
+      "active": 3.2,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.2,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "kk": {
+      "active": 7.4,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 7.4,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "STITCH": {
+      "active": 8.8,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 8.8,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "0xpotato": {
+      "active": 4.2,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.2,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "北城🍃": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "哦哈哟": {
+      "active": 6.3,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 6.3,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "彳亍 彳亍 彳亍🍓": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "Anna": {
+      "active": 4.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.0,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "稀饭": {
+      "active": 3.9,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.9,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u117": {
+      "active": 2.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.1,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "L.": {
+      "active": 2.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.1,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "心无旁骛": {
+      "active": 4.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.7,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "Super-Jun_深渊": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "俺是老实人": {
+      "active": 6.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 6.1,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u123": {
+      "active": 3.3,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.3,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u124": {
+      "active": 4.2,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.2,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u125": {
+      "active": 5.2,
+      "sharer": 0.8,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 6.0,
+      "contrib_count": 1,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "Kz": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "龖邋爛": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "web": {
+      "active": 6.7,
+      "sharer": 1.0,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 7.7,
+      "contrib_count": 1,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u130": {
+      "active": 5.4,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.4,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "静安": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "玉朋": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "yup": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u138": {
+      "active": 4.2,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.2,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u140": {
+      "active": 5.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.0,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "MULTIVERSE": {
+      "active": 7.0,
+      "sharer": 0.8,
+      "researcher": 0.0,
+      "collaborator": 2.5,
+      "total": 10.3,
+      "contrib_count": 2,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "爆辣鱿于": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u149": {
+      "active": 4.2,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.2,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "Miki": {
+      "active": 3.9,
+      "sharer": 1.0,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 4.9,
+      "contrib_count": 1,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "河滨": {
+      "active": 7.8,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 7.8,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "221": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u153": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u154": {
+      "active": 5.7,
+      "sharer": 5.4,
+      "researcher": 3.0,
+      "collaborator": 0.0,
+      "total": 14.1,
+      "contrib_count": 4,
+      "dragon_ball": true,
+      "dragon_reason": "用数据支撑市场观点，提供贝莱德与矿工成本等关键信息。"
+    },
+    "联昊通宥泽（老叶家美食）": {
+      "active": 3.9,
+      "sharer": 0.8,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 4.7,
+      "contrib_count": 1,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u164": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "S'améliorer": {
+      "active": 5.9,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.9,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "慕艳意": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "silas": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u187": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "清硕": {
+      "active": 5.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.1,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "奎": {
+      "active": 4.2,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.2,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u192": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "被埋的小王也": {
+      "active": 3.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "童勤": {
+      "active": 3.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.0,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "七": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "流光谢岁": {
+      "active": 6.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 6.1,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "T": {
+      "active": 8.6,
+      "sharer": 1.8,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 10.4,
+      "contrib_count": 2,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "吴火火 Zero": {
+      "active": 5.0,
+      "sharer": 1.3,
+      "researcher": 0.0,
+      "collaborator": 1.2,
+      "total": 7.5,
+      "contrib_count": 2,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u207": {
+      "active": 2.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.1,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u208": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "好久不见QAQ": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "石头Ishi": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "焱": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "ZhengX": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "X.": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "丹田居士": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "simplefly": {
+      "active": 3.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "一颗石榴杨": {
+      "active": 3.0,
+      "sharer": 1.0,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 4.0,
+      "contrib_count": 1,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u233": {
+      "active": 3.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "淇": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "君倾酒": {
+      "active": 4.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.7,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "熵域骇客🔥💎": {
+      "active": 3.3,
+      "sharer": 3.6,
+      "researcher": 3.9,
+      "collaborator": 0.0,
+      "total": 10.8,
+      "contrib_count": 2,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "转氨酶同志": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u253": {
+      "active": 4.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.7,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "玖玖": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "Chuck": {
+      "active": 4.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.7,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u292": {
+      "active": 2.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.1,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u297": {
+      "active": 3.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "Jambo": {
+      "active": 3.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.0,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u349": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u351": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "余生": {
+      "active": 2.6,
+      "sharer": 1.0,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 3.6,
+      "contrib_count": 1,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "木木": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "。": {
+      "active": 2.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u431": {
+      "active": 4.4,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.4,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u436": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u453": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u476": {
+      "active": 3.4,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.4,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "STANZ": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u480": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "Mou": {
+      "active": 6.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 6.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "布衣": {
+      "active": 4.3,
+      "sharer": 0.0,
+      "researcher": 6.5,
+      "collaborator": 0.0,
+      "total": 10.8,
+      "contrib_count": 2,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "u486": {
+      "active": 3.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.6,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    },
+    "want": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "contrib_count": 0,
+      "dragon_ball": false,
+      "dragon_reason": ""
+    }
+  }
+}

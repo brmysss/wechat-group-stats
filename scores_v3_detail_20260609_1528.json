@@ -1,0 +1,445 @@
+{
+  "analyzed_at": "2026-06-09T15:28:29.905609",
+  "days": 14,
+  "daily_contributions": [
+    {
+      "date": "2026-06-02",
+      "msg_count": 20,
+      "contrib_count": 4,
+      "contributions": [
+        {
+          "time": "18:54",
+          "user": "吴火火 Zero",
+          "types": [
+            "collaborator"
+          ],
+          "value": 3,
+          "reason": "主动提供VPN推荐，但未公开分享"
+        },
+        {
+          "time": "21:29",
+          "user": "Allen Dily",
+          "types": [
+            "collaborator"
+          ],
+          "value": 5,
+          "reason": "承诺帮助解决交易所风控问题"
+        },
+        {
+          "time": "22:31",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享对美股与比特币关联的担忧"
+        },
+        {
+          "time": "22:37",
+          "user": "T",
+          "types": [
+            "sharer"
+          ],
+          "value": 3,
+          "reason": "分享个人定投计划，有参考价值"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-03",
+      "msg_count": 81,
+      "contrib_count": 4,
+      "contributions": [
+        {
+          "time": "11:27",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 6,
+          "reason": "分享对BG转型的独到见解"
+        },
+        {
+          "time": "15:27",
+          "user": "Allen Dily",
+          "types": [
+            "sharer",
+            "researcher"
+          ],
+          "value": 8,
+          "reason": "分享优化工作流并承诺分享投研方法"
+        },
+        {
+          "time": "15:32",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分析BG升级的体验与竞品对比"
+        },
+        {
+          "time": "22:47",
+          "user": "熵域骇客🔥💎",
+          "types": [
+            "sharer",
+            "researcher"
+          ],
+          "value": 9,
+          "reason": "分享自制土狗情绪指标与共振分析"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-04",
+      "msg_count": 132,
+      "contrib_count": 8,
+      "contributions": [
+        {
+          "time": "09:16",
+          "user": "u154",
+          "types": [
+            "sharer"
+          ],
+          "value": 3,
+          "reason": "分享市场观点，但缺乏深度"
+        },
+        {
+          "time": "09:38",
+          "user": "一颗石榴杨",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享技术分析类比，有参考价值"
+        },
+        {
+          "time": "10:06",
+          "user": "u125",
+          "types": [
+            "sharer"
+          ],
+          "value": 3,
+          "reason": "提及工具chatlog，但未展开"
+        },
+        {
+          "time": "10:28",
+          "user": "Allen Dily",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享AI赋能个人想法，有洞察"
+        },
+        {
+          "time": "10:56",
+          "user": "Allen Dily",
+          "types": [
+            "collaborator"
+          ],
+          "value": 7,
+          "reason": "宣布社群规则和积分机制，维护秩序"
+        },
+        {
+          "time": "10:59",
+          "user": "Allen Dily",
+          "types": [
+            "collaborator"
+          ],
+          "value": 6,
+          "reason": "提及社群方法论，鼓励建议"
+        },
+        {
+          "time": "11:36",
+          "user": "u154",
+          "types": [
+            "sharer",
+            "researcher"
+          ],
+          "value": 7,
+          "reason": "分析双币盈利率和RSI，有数据支撑"
+        },
+        {
+          "time": "15:33",
+          "user": "熵域骇客🔥💎",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享hype跌价和清仓信息"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-05",
+      "msg_count": 79,
+      "contrib_count": 14,
+      "contributions": [
+        {
+          "time": "09:38",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享SpaceX上市估值对比加密市场"
+        },
+        {
+          "time": "10:32",
+          "user": "Allen Dily",
+          "types": [
+            "sharer",
+            "researcher"
+          ],
+          "value": 8,
+          "reason": "分享GitHub项目并附原创博弈分析"
+        },
+        {
+          "time": "13:42",
+          "user": "u154",
+          "types": [
+            "sharer"
+          ],
+          "value": 6,
+          "reason": "分享贝莱德ETF买入BTC数据"
+        },
+        {
+          "time": "15:03",
+          "user": "Allen Dily",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享ZEC价格暴跌信息"
+        },
+        {
+          "time": "15:09",
+          "user": "web",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享微策略历史信息"
+        },
+        {
+          "time": "15:11",
+          "user": "布衣",
+          "types": [
+            "researcher"
+          ],
+          "value": 7,
+          "reason": "原创分析加密信任与AI漏洞影响"
+        },
+        {
+          "time": "16:18",
+          "user": "u589",
+          "types": [
+            "sharer",
+            "researcher"
+          ],
+          "value": 7,
+          "reason": "分享ZEC总量分析并引用外部研究"
+        },
+        {
+          "time": "16:20",
+          "user": "吴火火 Zero",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享ZEC抛压原因及个人经验"
+        },
+        {
+          "time": "17:05",
+          "user": "u154",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享矿工成本价数据"
+        },
+        {
+          "time": "18:14",
+          "user": "布衣",
+          "types": [
+            "researcher"
+          ],
+          "value": 8,
+          "reason": "原创分析code is law被AI颠覆"
+        },
+        {
+          "time": "19:50",
+          "user": "Madge鱼",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享彩虹图跌破技术指标"
+        },
+        {
+          "time": "21:23",
+          "user": "Allen Dily",
+          "types": [
+            "researcher"
+          ],
+          "value": 7,
+          "reason": "对比去年与今年DAT走势分析"
+        },
+        {
+          "time": "22:31",
+          "user": "u577",
+          "types": [
+            "sharer"
+          ],
+          "value": 3,
+          "reason": "分享新币锁仓问题求助"
+        },
+        {
+          "time": "22:35",
+          "user": "MULTIVERSE",
+          "types": [
+            "collaborator"
+          ],
+          "value": 6,
+          "reason": "提醒貔貅盘风险帮助他人"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-06",
+      "msg_count": 14,
+      "contrib_count": 7,
+      "contributions": [
+        {
+          "time": "00:15",
+          "user": "MULTIVERSE",
+          "types": [
+            "sharer"
+          ],
+          "value": 3,
+          "reason": "分享对BTC价格走势的观察"
+        },
+        {
+          "time": "09:36",
+          "user": "Allen Dily",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享对马斯克财技的见解"
+        },
+        {
+          "time": "13:07",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享ETH历史投资回报数据"
+        },
+        {
+          "time": "14:18",
+          "user": "Allen Dily",
+          "types": [
+            "sharer"
+          ],
+          "value": 3,
+          "reason": "分享对市场情绪的调侃"
+        },
+        {
+          "time": "14:20",
+          "user": "Miki",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享大佬动态的观察"
+        },
+        {
+          "time": "14:22",
+          "user": "余生",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "提出预测需用金钱下注的观点"
+        },
+        {
+          "time": "15:24",
+          "user": "联昊通宥泽（老叶家美食）",
+          "types": [
+            "sharer"
+          ],
+          "value": 3,
+          "reason": "询问ZNC代币价格动态"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-07",
+      "msg_count": 6,
+      "contrib_count": 2,
+      "contributions": [
+        {
+          "time": "11:35",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 5,
+          "reason": "分享币安人生市值对比数据"
+        },
+        {
+          "time": "11:58",
+          "user": "T",
+          "types": [
+            "sharer"
+          ],
+          "value": 4,
+          "reason": "分享KOL空投活动信息"
+        }
+      ],
+      "error": null
+    },
+    {
+      "date": "2026-06-08",
+      "msg_count": 52,
+      "contrib_count": 3,
+      "contributions": [
+        {
+          "time": "15:48",
+          "user": "Allen Dily",
+          "types": [
+            "sharer"
+          ],
+          "value": 7,
+          "reason": "分享开源插件，提升效率工具"
+        },
+        {
+          "time": "16:29",
+          "user": "Allen Dily",
+          "types": [
+            "collaborator"
+          ],
+          "value": 6,
+          "reason": "活跃群氛围，奖励活跃成员"
+        },
+        {
+          "time": "21:04",
+          "user": "u81",
+          "types": [
+            "sharer"
+          ],
+          "value": 3,
+          "reason": "分享项目方周边收集创意"
+        }
+      ],
+      "error": null
+    }
+  ]
+}

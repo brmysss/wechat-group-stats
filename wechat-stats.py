@@ -457,6 +457,16 @@ def extract_messages_for_push(contact_db_path, message_dbs, group_username, sinc
 
         for sender_id, content_raw, create_time in rows:
             content = content_raw if isinstance(content_raw, str) else content_raw.decode('utf-8', errors='replace')
+            # 去掉 WeChat DB message_content 自带的 "wxid_xxx:\n" 前缀
+            newline_idx = content.find('\n')
+            if newline_idx > 0:
+                prefix = content[:newline_idx]
+                if ':' in prefix or 'wxid_' in prefix or '@chatroom' in prefix:
+                    content = content[newline_idx + 1:]
+                    # 有时有第二层 sender_name: 前缀
+                    nl2 = content.find('\n')
+                    if nl2 > 0 and ':' in content[:nl2]:
+                        content = content[nl2 + 1:]
             messages.append({
                 "sender_id": sender_id,
                 "content": content[:2000],  # 截断过长消息
@@ -521,7 +531,7 @@ def push_to_api(api_url, api_key, group_wxid, messages):
     )
 
     try:
-        with ur.urlopen(req, timeout=30) as resp:
+        with ur.urlopen(req, timeout=120) as resp:
             return json.loads(resp.read())
     except Exception as e:
         return {"ok": False, "error": str(e)}
@@ -557,7 +567,7 @@ def run_push(group_username, api_url, api_key, message_dbs, contact_db_path):
             max_ts = m["sent_at"]
 
     # 分批 POST（每批 200 条）
-    batch_size = 200
+    batch_size = 20
     total_inserted = 0
     total_skipped = 0
 
@@ -726,7 +736,7 @@ def main():
         else:
             room_id, username = item
         print(f"\n[*] 分析: {username[:25]}...")
-        results.append(analyze_group(str(contact_db), message_dbs, username, room_id, contact_by_id, contact_by_wxid))
+        results.append(analyze_group(str(contact_db), message_dbs, username, room_id, contact_by_id, contact_by_wxid, detailed=True))
 
     output_path = Path(args.output)
     json.dump({"generated_at": datetime.now().isoformat(), "groups": results},

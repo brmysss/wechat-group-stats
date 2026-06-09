@@ -1,0 +1,562 @@
+{
+  "analyzed_at": "2026-06-09T10:16:45.428563",
+  "days": 3,
+  "users": 61,
+  "dragon_ball_winners": [
+    "u81",
+    "Allen Dily",
+    "T"
+  ],
+  "dragon_ball_count": 3,
+  "scores": {
+    "129": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "130": {
+      "active": 4.8,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.8,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "134": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "135": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "8": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "138": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "u81": {
+      "active": 0,
+      "sharer": 10.0,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 10.0,
+      "contrib_count": 3,
+      "dragon_ball": true
+    },
+    "139": {
+      "active": 3.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "12": {
+      "active": 3.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "140": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "14": {
+      "active": 3.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "145": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "18": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "T": {
+      "active": 0,
+      "sharer": 3.1,
+      "researcher": 0.0,
+      "collaborator": 0.0,
+      "total": 3.1,
+      "contrib_count": 1,
+      "dragon_ball": true
+    },
+    "20": {
+      "active": 3.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "149": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "22": {
+      "active": 7.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 7.6,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "151": {
+      "active": 5.8,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.8,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "150": {
+      "active": 5.4,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.4,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "21": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "26": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "27": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "28": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "161": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "167": {
+      "active": 4.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.0,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "297": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "564": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "58": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "61": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "190": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "189": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "Allen Dily": {
+      "active": 0,
+      "sharer": 5.4,
+      "researcher": 0.0,
+      "collaborator": 10.0,
+      "total": 15.4,
+      "contrib_count": 2,
+      "dragon_ball": true
+    },
+    "73": {
+      "active": 3.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "203": {
+      "active": 5.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.6,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "204": {
+      "active": 7.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 7.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "205": {
+      "active": 4.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.0,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "207": {
+      "active": 3.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "81": {
+      "active": 9.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 9.6,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "209": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "339": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "211": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "88": {
+      "active": 3.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "93": {
+      "active": 4.8,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.8,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "351": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "352": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "480": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "482": {
+      "active": 4.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.0,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "486": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "617": {
+      "active": 5.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.1,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "107": {
+      "active": 5.4,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.4,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "108": {
+      "active": 8.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 8.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "109": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "378": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "111": {
+      "active": 4.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.0,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "242": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "243": {
+      "active": 5.4,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.4,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "120": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "122": {
+      "active": 4.8,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.8,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "251": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "124": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    },
+    "253": {
+      "active": 2.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.7,
+      "contrib_count": 0,
+      "dragon_ball": false
+    }
+  }
+}

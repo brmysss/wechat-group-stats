@@ -1,0 +1,1258 @@
+{
+  "analyzed_at": "2026-06-09T00:24:58.140789",
+  "days": 14,
+  "users": 139,
+  "scores": {
+    "u253": {
+      "active": 4.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.7,
+      "summary": "仅发表情和简短评价，无实质内容",
+      "dragon_nominee": false
+    },
+    "一颗石榴杨": {
+      "active": 3.0,
+      "sharer": 1,
+      "researcher": 1,
+      "collaborator": 0,
+      "total": 5.0,
+      "summary": "偶尔分享市场观点，但缺乏深度",
+      "dragon_nominee": false
+    },
+    "u2": {
+      "active": 2.8,
+      "sharer": 6,
+      "researcher": 3,
+      "collaborator": 5,
+      "total": 16.8,
+      "summary": "分享工具和修复信息，有协作互动",
+      "dragon_nominee": true
+    },
+    "LLL": {
+      "active": 3.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.6,
+      "summary": "仅表情和简短评价，无实质内容",
+      "dragon_nominee": false
+    },
+    "u233": {
+      "active": 3.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.6,
+      "summary": "仅表情和简短评价，无实质内容",
+      "dragon_nominee": false
+    },
+    "北城🍃": {
+      "active": 1.5,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.5,
+      "summary": "一句观点，无深入分析",
+      "dragon_nominee": false
+    },
+    "silas": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "summary": "仅表情和问号，无实质内容",
+      "dragon_nominee": false
+    },
+    "莫 算法": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "summary": "简短评论，无实质内容",
+      "dragon_nominee": false
+    },
+    "自由雷神-Henry": {
+      "active": 3.9,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.9,
+      "summary": "仅表情和简短评价，无实质内容",
+      "dragon_nominee": false
+    },
+    "君尚": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "summary": "仅简短评论，无实质内容",
+      "dragon_nominee": false
+    },
+    "μ": {
+      "active": 2.6,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.6,
+      "summary": "求助VPN，无实质内容",
+      "dragon_nominee": false
+    },
+    "吴火火 Zero": {
+      "active": 5.0,
+      "sharer": 2,
+      "researcher": 1,
+      "collaborator": 1,
+      "total": 9.0,
+      "summary": "讨论ZEC和bug，有信息但深度不足",
+      "dragon_nominee": false
+    },
+    "u81": {
+      "active": 9.5,
+      "sharer": 5,
+      "researcher": 4,
+      "collaborator": 2,
+      "total": 20.5,
+      "summary": "分享观点和新闻，有分析但不够系统",
+      "dragon_nominee": false
+    },
+    "kk": {
+      "active": 7.4,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 7.4,
+      "summary": "表情和简短回应，无实质内容",
+      "dragon_nominee": false
+    },
+    "u27": {
+      "active": 4.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.5,
+      "summary": "重复他人发言，无实质内容",
+      "dragon_nominee": false
+    },
+    "u17": {
+      "active": 4.2,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.2,
+      "summary": "简单询问和赞同，无深度",
+      "dragon_nominee": false
+    },
+    "布衣": {
+      "active": 4.3,
+      "sharer": 5,
+      "researcher": 5,
+      "collaborator": 1,
+      "total": 15.3,
+      "summary": "有见解的评论，涉及code is law和AI影响",
+      "dragon_nominee": false
+    },
+    "Allen Dily": {
+      "active": 9.4,
+      "sharer": 9,
+      "researcher": 8,
+      "collaborator": 9,
+      "total": 35.4,
+      "summary": "持续开源工具，分享项目，积极互动和奖励",
+      "dragon_nominee": true
+    },
+    "u89": {
+      "active": 3.3,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.3,
+      "summary": "简短回应，无实质内容",
+      "dragon_nominee": false
+    },
+    "稀饭": {
+      "active": 3.9,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.9,
+      "summary": "简单提问和感谢，无深度",
+      "dragon_nominee": false
+    },
+    "Chuck": {
+      "active": 4.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.7,
+      "summary": "发言多为表情、闲聊，无实质内容",
+      "dragon_nominee": false
+    },
+    "河滨": {
+      "active": 7.8,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 8.8,
+      "summary": "偶尔提问但无深入分享，多为闲聊",
+      "dragon_nominee": false
+    },
+    "殷子 💦🌿": {
+      "active": 6.1,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 1,
+      "total": 8.1,
+      "summary": "发言多为闲聊、表情和简短互动，无实质内容",
+      "dragon_nominee": false
+    },
+    "web": {
+      "active": 6.7,
+      "sharer": 3,
+      "researcher": 2,
+      "collaborator": 0,
+      "total": 11.7,
+      "summary": "分享一些市场观点和新闻，有一定信息价值",
+      "dragon_nominee": false
+    },
+    "Candy": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅一个简短评论，无实质内容",
+      "dragon_nominee": false
+    },
+    "卖鱼佬": {
+      "active": 2.5,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "summary": "偶尔提及交易，但无深入分析",
+      "dragon_nominee": false
+    },
+    "流光谢岁": {
+      "active": 6.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 6.1,
+      "summary": "发言多为表情和简短回应",
+      "dragon_nominee": false
+    },
+    "初白": {
+      "active": 4.4,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.4,
+      "summary": "偶尔参与讨论，无实质贡献",
+      "dragon_nominee": false
+    },
+    "u95": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "summary": "仅简短回应，无内容",
+      "dragon_nominee": false
+    },
+    "u93": {
+      "active": 6.0,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 7.0,
+      "summary": "偶尔评论市场，无深度",
+      "dragon_nominee": false
+    },
+    "u140": {
+      "active": 5.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.0,
+      "summary": "仅发表情和简短回应，无实质内容",
+      "dragon_nominee": false
+    },
+    "龙龙": {
+      "active": 6.6,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 1,
+      "total": 8.6,
+      "summary": "偶尔分享观点，但多为闲聊和表情",
+      "dragon_nominee": false
+    },
+    "心无旁骛": {
+      "active": 4.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.7,
+      "summary": "仅表情和简短附和，无实质内容",
+      "dragon_nominee": false
+    },
+    "u297": {
+      "active": 3.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.6,
+      "summary": "仅简短评论，无实质内容",
+      "dragon_nominee": false
+    },
+    "轩辕": {
+      "active": 2.5,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "summary": "提问但未深入，无持续输出",
+      "dragon_nominee": false
+    },
+    "MULTIVERSE": {
+      "active": 7.0,
+      "sharer": 5,
+      "researcher": 3,
+      "collaborator": 2,
+      "total": 17.0,
+      "summary": "分享市场观点和交易经验，有一定分析",
+      "dragon_nominee": false
+    },
+    "u74": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅表情，无实质内容",
+      "dragon_nominee": false
+    },
+    "u149": {
+      "active": 4.2,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.2,
+      "summary": "偶尔评论，无深度内容",
+      "dragon_nominee": false
+    },
+    "u26": {
+      "active": 5.4,
+      "sharer": 2,
+      "researcher": 1,
+      "collaborator": 0,
+      "total": 8.4,
+      "summary": "有少量观点但缺乏深度和持续性",
+      "dragon_nominee": false
+    },
+    "小雨哈哈": {
+      "active": 5.7,
+      "sharer": 3,
+      "researcher": 1,
+      "collaborator": 1,
+      "total": 10.7,
+      "summary": "分享AI相关话题，有一定价值但不够深入",
+      "dragon_nominee": false
+    },
+    "再见阿郎": {
+      "active": 5.7,
+      "sharer": 2,
+      "researcher": 1,
+      "collaborator": 1,
+      "total": 9.7,
+      "summary": "偶尔分享生活趣事和简单知识，但多为闲聊和调侃",
+      "dragon_nominee": false
+    },
+    "T": {
+      "active": 8.6,
+      "sharer": 3,
+      "researcher": 1,
+      "collaborator": 2,
+      "total": 14.6,
+      "summary": "讨论群管理和市场观点，有一定见解但深度不足",
+      "dragon_nominee": false
+    },
+    "Super-Jun_深渊": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅一条无意义发言",
+      "dragon_nominee": false
+    },
+    "u124": {
+      "active": 4.2,
+      "sharer": 2,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 6.2,
+      "summary": "简短市场观点，缺乏深度",
+      "dragon_nominee": false
+    },
+    "u125": {
+      "active": 5.2,
+      "sharer": 3,
+      "researcher": 1,
+      "collaborator": 1,
+      "total": 10.2,
+      "summary": "分享工具使用经验，但内容零散",
+      "dragon_nominee": false
+    },
+    "u431": {
+      "active": 4.4,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.4,
+      "summary": "简短评论市场，无实质内容",
+      "dragon_nominee": false
+    },
+    "u154": {
+      "active": 5.7,
+      "sharer": 4,
+      "researcher": 3,
+      "collaborator": 1,
+      "total": 13.7,
+      "summary": "有一定市场分析，引用数据，但情绪化",
+      "dragon_nominee": false
+    },
+    "STITCH": {
+      "active": 8.8,
+      "sharer": 4,
+      "researcher": 2,
+      "collaborator": 2,
+      "total": 16.8,
+      "summary": "讨论市场板块和游戏装备，偶尔有见解",
+      "dragon_nominee": false
+    },
+    "S'améliorer": {
+      "active": 5.9,
+      "sharer": 2,
+      "researcher": 1,
+      "collaborator": 1,
+      "total": 9.9,
+      "summary": "提问和简短评论，缺乏深度",
+      "dragon_nominee": false
+    },
+    "u486": {
+      "active": 3.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.6,
+      "summary": "无实质内容，仅附和",
+      "dragon_nominee": false
+    },
+    "Mou": {
+      "active": 6.5,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 7.5,
+      "summary": "少量评论，无深度分享",
+      "dragon_nominee": false
+    },
+    "u564": {
+      "active": 4.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.7,
+      "summary": "仅表情和简短回应",
+      "dragon_nominee": false
+    },
+    "u88": {
+      "active": 5.1,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 6.1,
+      "summary": "偶尔表达情绪，无实质内容",
+      "dragon_nominee": false
+    },
+    "哦哈哟": {
+      "active": 6.3,
+      "sharer": 2,
+      "researcher": 0,
+      "collaborator": 1,
+      "total": 9.3,
+      "summary": "少量讨论，无深度分析",
+      "dragon_nominee": false
+    },
+    "u208": {
+      "active": 1.5,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.5,
+      "summary": "提问但未深入",
+      "dragon_nominee": false
+    },
+    "焱": {
+      "active": 1.5,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.5,
+      "summary": "简短评论",
+      "dragon_nominee": false
+    },
+    "0xpotato": {
+      "active": 4.2,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.2,
+      "summary": "无实质内容",
+      "dragon_nominee": false
+    },
+    "年年有鱼": {
+      "active": 3.6,
+      "sharer": 2,
+      "researcher": 0,
+      "collaborator": 1,
+      "total": 6.6,
+      "summary": "讨论工具，但无深度",
+      "dragon_nominee": false
+    },
+    "u526": {
+      "active": 1.5,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.5,
+      "summary": "简短猜测",
+      "dragon_nominee": false
+    },
+    "铜锣湾便民修理 彭": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "summary": "仅表达情绪和表情，无实质内容",
+      "dragon_nominee": false
+    },
+    "童勤": {
+      "active": 3.0,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.0,
+      "summary": "简短交易观点，无深度分析",
+      "dragon_nominee": false
+    },
+    "彳亍 彳亍 彳亍🍓": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "summary": "仅表情回复，无实质内容",
+      "dragon_nominee": false
+    },
+    "与风说心事": {
+      "active": 3.8,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.8,
+      "summary": "表达交易情绪，无实质分享",
+      "dragon_nominee": false
+    },
+    "远x": {
+      "active": 3.4,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.4,
+      "summary": "情绪化发言，无实质内容",
+      "dragon_nominee": false
+    },
+    "u292": {
+      "active": 2.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.1,
+      "summary": "提问但无实质分享",
+      "dragon_nominee": false
+    },
+    "u476": {
+      "active": 3.4,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 1,
+      "total": 5.4,
+      "summary": "少量互动，无深度内容",
+      "dragon_nominee": false
+    },
+    "爆辣鱿于": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅一个字回复",
+      "dragon_nominee": false
+    },
+    "u28": {
+      "active": 3.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.0,
+      "summary": "无实质内容",
+      "dragon_nominee": false
+    },
+    "zxz": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅回复好的",
+      "dragon_nominee": false
+    },
+    "u187": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅表达对群主的称赞，无实质内容",
+      "dragon_nominee": false
+    },
+    "u123": {
+      "active": 3.3,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.3,
+      "summary": "闲聊和简短评论，无价值输出",
+      "dragon_nominee": false
+    },
+    "被埋的小王也": {
+      "active": 3.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.6,
+      "summary": "简短感慨和数字，无实质内容",
+      "dragon_nominee": false
+    },
+    "Mi Manchi": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅表情，无内容",
+      "dragon_nominee": false
+    },
+    "淇": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "summary": "简短回应，无实质内容",
+      "dragon_nominee": false
+    },
+    "清硕": {
+      "active": 5.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 5.1,
+      "summary": "提问和简短评论，无深度内容",
+      "dragon_nominee": false
+    },
+    "熵域骇客🔥💎": {
+      "active": 3.3,
+      "sharer": 7,
+      "researcher": 8,
+      "collaborator": 2,
+      "total": 20.3,
+      "summary": "分享土狗情绪指标工具，有技术分析，但协作较少",
+      "dragon_nominee": true
+    },
+    "微光": {
+      "active": 4.7,
+      "sharer": 3,
+      "researcher": 1,
+      "collaborator": 1,
+      "total": 9.7,
+      "summary": "分享投资观点，但缺乏深度分析",
+      "dragon_nominee": false
+    },
+    "联昊通宥泽（老叶家美食）": {
+      "active": 3.9,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.9,
+      "summary": "简短交易评论，无实质价值",
+      "dragon_nominee": false
+    },
+    "u480": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "summary": "仅数字，无内容",
+      "dragon_nominee": false
+    },
+    "u537": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅回复'好'，无实质内容",
+      "dragon_nominee": false
+    },
+    "。": {
+      "active": 2.5,
+      "sharer": 6,
+      "researcher": 5,
+      "collaborator": 0,
+      "total": 13.5,
+      "summary": "分析ETF流动性和IPO影响，有一定见解但未深入",
+      "dragon_nominee": false
+    },
+    "Arronㅤ": {
+      "active": 2.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.1,
+      "summary": "仅闲聊和简单回复，无实质内容",
+      "dragon_nominee": false
+    },
+    "君倾酒": {
+      "active": 4.7,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.7,
+      "summary": "仅表达情绪和简单评论，无实质分享",
+      "dragon_nominee": false
+    },
+    "u164": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅回复'好的'，无实质内容",
+      "dragon_nominee": false
+    },
+    "Jambo": {
+      "active": 3.0,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.0,
+      "summary": "仅简单评论，无实质内容",
+      "dragon_nominee": false
+    },
+    "龖邋爛": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅回复'支持'，无实质内容",
+      "dragon_nominee": false
+    },
+    "童木": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅回复一句话，无实质内容",
+      "dragon_nominee": false
+    },
+    "Kz": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅回复'支持'，无实质内容",
+      "dragon_nominee": false
+    },
+    "七": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅表达潜水状态，无实质内容",
+      "dragon_nominee": false
+    },
+    "明子才": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅发表情和简短评价，无实质内容",
+      "dragon_nominee": false
+    },
+    "u61": {
+      "active": 4.2,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.2,
+      "summary": "仅回复数字或单字，无实质内容",
+      "dragon_nominee": false
+    },
+    "u153": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "summary": "仅简短吐槽和数字，无实质内容",
+      "dragon_nominee": false
+    },
+    "yup": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅回复数字，无实质内容",
+      "dragon_nominee": false
+    },
+    "u453": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅一句评价，无实质内容",
+      "dragon_nominee": false
+    },
+    "u602": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅回复数字，无实质内容",
+      "dragon_nominee": false
+    },
+    "Anna": {
+      "active": 4.0,
+      "sharer": 2,
+      "researcher": 0,
+      "collaborator": 1,
+      "total": 7.0,
+      "summary": "偶尔分享信息但缺乏深度，协作一般",
+      "dragon_nominee": false
+    },
+    "u117": {
+      "active": 2.1,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.1,
+      "summary": "提问和简单建议，无深入分享",
+      "dragon_nominee": false
+    },
+    "俺是老实人": {
+      "active": 6.1,
+      "sharer": 4,
+      "researcher": 2,
+      "collaborator": 1,
+      "total": 13.1,
+      "summary": "分享市场观点和AI使用心得，有一定见解但缺乏系统性",
+      "dragon_nominee": false
+    },
+    "u130": {
+      "active": 5.4,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 1,
+      "total": 7.4,
+      "summary": "闲聊和表情为主，偶尔评论但无实质内容",
+      "dragon_nominee": false
+    },
+    "L": {
+      "active": 2.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.5,
+      "summary": "无实质内容，仅闲聊",
+      "dragon_nominee": false
+    },
+    "丹田居士": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "无实质内容，仅抱怨",
+      "dragon_nominee": false
+    },
+    "木木": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "summary": "无实质内容，仅表情和闲聊",
+      "dragon_nominee": false
+    },
+    "u192": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "无实质内容，仅一句话",
+      "dragon_nominee": false
+    },
+    "慕艳意": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "无实质内容，仅评论",
+      "dragon_nominee": false
+    },
+    "u83": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "summary": "无实质内容，仅附和和数字",
+      "dragon_nominee": false
+    },
+    "神鱼": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "无实质内容，仅疑问",
+      "dragon_nominee": false
+    },
+    "u138": {
+      "active": 4.2,
+      "sharer": 2,
+      "researcher": 0,
+      "collaborator": 1,
+      "total": 7.2,
+      "summary": "提出建议和回忆，但无深度",
+      "dragon_nominee": false
+    },
+    "u608": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "无实质内容，仅表情",
+      "dragon_nominee": false
+    },
+    "奎": {
+      "active": 4.2,
+      "sharer": 3,
+      "researcher": 2,
+      "collaborator": 1,
+      "total": 10.2,
+      "summary": "提出市场问题和分红疑问，有一定分享但无深度",
+      "dragon_nominee": false
+    },
+    "u436": {
+      "active": 1.5,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.5,
+      "summary": "简单预测市场底部，无实质内容",
+      "dragon_nominee": false
+    },
+    "彬": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 1,
+      "total": 2.5,
+      "summary": "简短支持，无实质分享",
+      "dragon_nominee": false
+    },
+    "u349": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "无实质内容",
+      "dragon_nominee": false
+    },
+    "simplefly": {
+      "active": 3.6,
+      "sharer": 3,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 6.6,
+      "summary": "偶尔分享交易观点，但缺乏深度",
+      "dragon_nominee": false
+    },
+    "慎初๛": {
+      "active": 2.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 1,
+      "total": 3.5,
+      "summary": "闲聊和简单支持，无实质贡献",
+      "dragon_nominee": false
+    },
+    "u21": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "summary": "仅系统邀请消息",
+      "dragon_nominee": false
+    },
+    "余生": {
+      "active": 2.6,
+      "sharer": 2,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.6,
+      "summary": "提出预测建议但无深入分析",
+      "dragon_nominee": false
+    },
+    "玖玖": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "无实质内容",
+      "dragon_nominee": false
+    },
+    "L.": {
+      "active": 2.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.1,
+      "summary": "仅表情和数字",
+      "dragon_nominee": false
+    },
+    "Miki": {
+      "active": 3.9,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 4.9,
+      "summary": "简单评论市场，无深度",
+      "dragon_nominee": false
+    },
+    "张友良": {
+      "active": 2.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.1,
+      "summary": "仅报告物业问题，无实质内容",
+      "dragon_nominee": false
+    },
+    "want": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "一句感慨，无实质内容",
+      "dragon_nominee": false
+    },
+    ".": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "一句评论，无实质内容",
+      "dragon_nominee": false
+    },
+    "u207": {
+      "active": 2.1,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.1,
+      "summary": "简短吐槽，无实质内容",
+      "dragon_nominee": false
+    },
+    "静安": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅表情，无实质内容",
+      "dragon_nominee": false
+    },
+    "u351": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "简短称赞，无实质内容",
+      "dragon_nominee": false
+    },
+    "转氨酶同志": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅表情，无实质内容",
+      "dragon_nominee": false
+    },
+    "几疏": {
+      "active": 3.2,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.2,
+      "summary": "抱怨封号，无实质分享或分析",
+      "dragon_nominee": false
+    },
+    "石头Ishi": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "抱怨封号，无实质内容",
+      "dragon_nominee": false
+    },
+    "玉朋": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "一句感慨，无实质内容",
+      "dragon_nominee": false
+    },
+    "STANZ": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅发送数字1，无实质内容",
+      "dragon_nominee": false
+    },
+    "u104": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅发送数字1，无实质内容",
+      "dragon_nominee": false
+    },
+    "X.": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅发送数字1，无实质内容",
+      "dragon_nominee": false
+    },
+    "好久不见QAQ": {
+      "active": 2.6,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.6,
+      "summary": "仅表情和单字，无实质内容",
+      "dragon_nominee": false
+    },
+    "红云": {
+      "active": 2.5,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.5,
+      "summary": "简短评论贝莱德，无深度分析",
+      "dragon_nominee": false
+    },
+    "u589": {
+      "active": 2.1,
+      "sharer": 6,
+      "researcher": 5,
+      "collaborator": 3,
+      "total": 16.1,
+      "summary": "分享链接并澄清BTC总量问题，有一定价值",
+      "dragon_nominee": true
+    },
+    "221": {
+      "active": 1.5,
+      "sharer": 0,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 1.5,
+      "summary": "仅表达持仓焦虑，无实质内容",
+      "dragon_nominee": false
+    },
+    "ZhengX": {
+      "active": 1.5,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 2.5,
+      "summary": "提问税务问题，但未提供深入信息",
+      "dragon_nominee": false
+    },
+    "Madge鱼": {
+      "active": 2.1,
+      "sharer": 1,
+      "researcher": 0,
+      "collaborator": 0,
+      "total": 3.1,
+      "summary": "简短评论市场走势，无深度",
+      "dragon_nominee": false
+    },
+    "u577": {
+      "active": 3.9,
+      "sharer": 2,
+      "researcher": 0,
+      "collaborator": 2,
+      "total": 7.9,
+      "summary": "求助新币问题，但未提供有价值分享",
+      "dragon_nominee": false
+    }
+  }
+}

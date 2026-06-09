@@ -7,6 +7,7 @@ interface User {
   id: string;
   username: string;
   wxid: string | null;
+  avatarUrl: string | null;
   createdAt: string;
 }
 
@@ -14,6 +15,7 @@ interface AuthContextType {
   user: User | null;
   loading: boolean;
   login: (code: string, username: string) => Promise<{ ok: boolean; error?: string }>;
+  loginPassword: (username: string, password: string) => Promise<{ ok: boolean; error?: string }>;
   logout: () => Promise<void>;
 }
 
@@ -21,6 +23,7 @@ const AuthContext = createContext<AuthContextType>({
   user: null,
   loading: true,
   login: async () => ({ ok: false }),
+  loginPassword: async () => ({ ok: false }),
   logout: async () => {},
 });
 
@@ -53,15 +56,28 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return data;
   };
 
+  const loginPassword = async (username: string, password: string) => {
+    const res = await fetch("/api/auth/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username, password }),
+    });
+    const data = await res.json();
+    if (data.ok) {
+      setUser(data.user);
+      router.push("/dashboard");
+    }
+    return data;
+  };
+
   const logout = async () => {
-    // 清 cookie 通过 set maxAge=0
-    document.cookie = "user_id=; max-age=0; path=/";
+    await fetch("/api/auth/logout", { method: "POST" });
     setUser(null);
     router.push("/");
   };
 
   return (
-    <AuthContext.Provider value={{ user, loading, login, logout }}>
+    <AuthContext.Provider value={{ user, loading, login, loginPassword, logout }}>
       {children}
     </AuthContext.Provider>
   );
