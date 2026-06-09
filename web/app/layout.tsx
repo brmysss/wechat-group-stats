@@ -18,14 +18,6 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   title: "前进四社群",
   description: "前进四社群内部工具",
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "16x16 32x32" },
-      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
-      { url: "/favicon-16.png", type: "image/png", sizes: "16x16" },
-    ],
-    apple: { url: "/logo.jpg", sizes: "180x180" },
-  },
 };
 
 export default function RootLayout({
