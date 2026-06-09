@@ -1,21 +1,31 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans, DM_Mono } from "next/font/google";
 import { Providers } from "./providers";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const dmMono = DM_Mono({
+  variable: "--font-dm-mono",
   subsets: ["latin"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
   title: "前进四社群",
-  description: "WeChat 群聊积分 & 排行榜",
+  description: "前进四社群内部工具",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "16x16 32x32" },
+      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16.png", type: "image/png", sizes: "16x16" },
+    ],
+    apple: { url: "/logo.jpg", sizes: "180x180" },
+  },
 };
 
 export default function RootLayout({
@@ -26,9 +36,9 @@ export default function RootLayout({
   return (
     <html
       lang="zh-CN"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
+      className={`${dmSans.variable} ${dmMono.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full flex flex-col bg-zinc-950 text-zinc-100">
+      <body className="min-h-full bg-background text-foreground">
         <Providers>{children}</Providers>
       </body>
     </html>
